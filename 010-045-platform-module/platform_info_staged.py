@@ -2,10 +2,10 @@
 
 
 def platform_info():
-    user_arch = machine()
     # user_os =
+    # user_arch =
     # user_python =
-    return
+    return ...
 
 
 print(platform_info())
