@@ -2,7 +2,7 @@ from platform import machine, system, python_version
 
 
 def ask_user_info(spec):
-    if spec == 'os':
+    if spec == 'OS':
         return system()
     elif spec == 'architecture':
         return machine()
@@ -13,5 +13,5 @@ def ask_user_info(spec):
 
 
 print("Depending on your input we can show relevant info")
-inp = input("Enter one of the words in [os, architecture, python]: ")
+inp = input("Enter one of the words in [OS, architecture, python]: ")
 print(ask_user_info(inp))
