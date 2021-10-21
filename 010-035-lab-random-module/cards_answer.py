@@ -1,9 +1,9 @@
-# Add imports here
+from random import sample
 
 
-# Complete the function
 def cards_sample(suits, ranks):
-
+    deck = [str(x)+'-'+y for x in ranks for y in suits]
+    return sample(deck, 4)
 
 
 suits = ["Spades", "Hearts", "Clubs", "Diamonds"]

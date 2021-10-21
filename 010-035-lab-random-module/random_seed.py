@@ -1,9 +1,9 @@
-from random import random, seed
+# Add necessary imports here
 
 
-def random_seed(s):
-    seed(s)
-    return random()
+# Write the function random_seed
+
+
 
 
 s = float(input("Enter a value: "))
