@@ -1,13 +1,12 @@
 from platform import machine, system, python_version
 
-
 def ask_user_info(spec):
-    if spec == 'OS':
-        return system()
-    elif spec == 'architecture':
-        return machine()
-    elif spec == 'python':
-        return python_version()
+    # Complete the function
+    #
+    #
+    #
+    #
+    #
     else:
         return "Sorry we couldn't answer your query"
 
