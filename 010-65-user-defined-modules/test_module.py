@@ -1,5 +1,5 @@
-import main_staged
+import main
 
 
 new_list = [i+1 for i in range(3)]
-print(main_staged.counter(new_list))
+print(main.counter(new_list))

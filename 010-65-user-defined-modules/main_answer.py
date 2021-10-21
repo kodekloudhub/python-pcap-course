@@ -8,5 +8,6 @@ def counter(the_list):
     return len(the_list)
 
 
-my_list = [i+1 for i in range(5)]
-print(counter(my_list) == count)
+if __name__ == "__main__":
+    my_list = [i+1 for i in range(5)]
+    print(counter(my_list) == count)
