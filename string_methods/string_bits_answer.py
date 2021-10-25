@@ -1,7 +1,7 @@
-movie = "My    beautiful laundrette!"
+movie = "My    beautiful\n laundrette!"
 
 # Create a list of the above string
-# without extra spaces or new lines
+# without extra spaces nor new lines
 movie = movie.split()
 
 
