@@ -4,9 +4,9 @@ def captcha():
         if inp == 19:
             print("Correct!")
         else:
-            print("Please try again.")
+            print("Wrong input, please try again.")
     except Exception:
-        print("Please try again.")
+        print("Hmm, something went wrong, please try again.")
         captcha()
 
 

@@ -4,7 +4,11 @@ def captcha():
         assert inp == 19
 
     except AssertionError:
-        print("Please try again.")
+        print("Wrong input, please try again.")
+        captcha()
+
+    except Exception:
+        print("Hmm, something went wrong, please try again.")
         captcha()
 
     print("Correct!")

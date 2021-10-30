@@ -1,9 +1,8 @@
 def err_fun(num):
-    try:
-        return 3 / num
-    except ZeroDivisionError:
-        print("Cannot divide with zero!")
-    return
+    return 3 / num
 
 
-err_fun(0)
+try:
+    err_fun(0)
+except ZeroDivisionError:
+    print("Cannot divide with zero!")
