@@ -1,7 +1,8 @@
 def captcha():
-    inp = int(input("3 + 16? "))
     try:
+        inp = int(input("3 + 16? "))
         assert inp == 19
+        print("Correct!")
 
     except AssertionError:
         print("Wrong input, please try again.")
@@ -10,8 +11,6 @@ def captcha():
     except Exception:
         print("Hmm, something went wrong, please try again.")
         captcha()
-
-    print("Correct!")
 
 
 captcha()

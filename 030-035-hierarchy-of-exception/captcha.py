@@ -1,6 +1,6 @@
 def captcha():
-    inp = int(input("3 + 16? "))
     try:
+        inp = int(input("3 + 16? "))
         if inp == 19:
             print("Correct!")
         else:
