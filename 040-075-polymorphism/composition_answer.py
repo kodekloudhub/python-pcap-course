@@ -28,11 +28,12 @@ class Transport:
         fuels = self.transport.get_fuels()
         return self.transport.get_type() + " uses " + fuels
 
-    def distance_covered(self, hours):
+    def distance_covered(self, hrs):
         km = int(self.transport.get_speed().strip("Km/hr"))
         return (
             self.transport.get_type() + " covers " + str(hours * km)
-            + "Km in " + str(hours) + " hours.")
+            + "Km in " + str(hours) + " hours."
+        )
 
 
 train = Transport(Train())
