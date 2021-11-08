@@ -25,16 +25,22 @@ class Transport:
 
     def travel(self):
         # Get fuels from transport object
-        fuels = ...
-        return ...get_type() + " uses " + fuels
+        fuels = # complete the code
+        # complete code below so outcome is:
+        # A bus uses diesel / or A train uses electricity
+        return # complete code 
 
-    def distance_covered(self, hours):
+    def distance_covered(self, hrs):
         # Get speed from the transport object
-        # use a string method to delete Km/hr from the speed string
-        km = int(...get_speed()...("Km/hr"))
+        # use a string method to delete 'Km/hr' part from speed
+        # and return an integer
+        km = # complete the code
         return (
-            ...get_type() + " covers " + str(hours * km)
-            + "Km in " + str(hours) + " hours.")
+            # complete code so outcome is:
+            # A train covers <km> in <hrs> hours.
+            # or A bus covers <km> in <hrs> hours.
+
+        )
 
 
 train = Transport(Train())
