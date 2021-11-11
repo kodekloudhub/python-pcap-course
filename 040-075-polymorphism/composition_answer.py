@@ -31,8 +31,8 @@ class Transport:
     def distance_covered(self, hrs):
         km = int(self.transport.get_speed().strip("Km/hr"))
         return (
-            self.transport.get_type() + " covers " + str(hours * km)
-            + "Km in " + str(hours) + " hours."
+            self.transport.get_type() + " covers " + str(hrs * km)
+            + "Km in " + str(hrs) + " hours."
         )
 
 
