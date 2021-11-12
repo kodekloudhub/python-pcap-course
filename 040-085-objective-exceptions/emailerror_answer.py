@@ -1,12 +1,16 @@
-class EmailError(ValueError):
-    def __init__(self, name, status):
-        self.data = (name, status)
+class EmailError(Exception):
+    def __init__(self, status, message):
+        self.status = status
+        self.message = message
+        super().__init__(self.message)
+
+    def __str__(self):
+        return self.status + " " + self.message
 
 
 email = "admin#libray.net"
 try:
     if "@" not in email:
-        raise EmailError("wrong format", "pending")
+        raise EmailError("pending!", "wrong format!")
 except EmailError as e:
-    for arg in e.args:
-        print(arg, end='! ')
+    print(e)
