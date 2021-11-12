@@ -1,12 +1,11 @@
 class EmailError(ValueError):
-    # complete the class by adding name
-    # and status properties in the constructor
+    # complete the class by adding status
+    # and message arguments for the constructor
 
 
 email = "admin#libray.net"
 try:
     if "@" not in email:
-        raise EmailError("wrong format", "pending")
+        raise EmailError("wrong format!", "pending!")
 except EmailError as nve:
-    for arg in nve.args:
-        print(arg, end='! ')
+    print(e)
