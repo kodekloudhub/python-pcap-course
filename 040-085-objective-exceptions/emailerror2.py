@@ -6,5 +6,4 @@ try:
     if "@" not in email:
         raise EmailError()
 except EmailError as e:
-    for arg in e.args:
-        print(arg, end='! ')
+    print(e)
