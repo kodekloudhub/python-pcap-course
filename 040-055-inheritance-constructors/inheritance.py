@@ -1,11 +1,11 @@
 class Super:
     # Add your code here
-    supVar = 1
+    supVar = 11
 
 
 class Sub(Super):
     # Add your code here
-    subVar = 2
+    subVar = 12
 
 
 obj = Sub()
