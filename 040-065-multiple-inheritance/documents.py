@@ -2,20 +2,19 @@
 class Document:
     # Add constructor
 
-    # Add the path method
+    # Add a path method, which returns the path
 
-    def save(self, extention)
-        self.path() + self.name + extention
+    def save(self, path, extention)
+        return self.path() + self.name + extention
 
-    # Add the str method
+    # Add the str method that returns
+    def __str__(self):
+        return "This is a Document"
 
 
 class PDF:
     def __init__(self, name):
-        self.name = name
-
-    def path(self, path):
-       return path
+        # complete the constructor
 
     # Override the save method
 
@@ -25,10 +24,8 @@ class PDF:
 
 class TEXT:
     def __init__(self, name):
-        self.name = name
+        # complete the constructor
 
-    def path(self, path):
-       return path
 
     # Override the save method
 
@@ -38,9 +35,7 @@ class TEXT:
 
 
 pdf = PDF(name="slides-show")
-pdf.path("/home/pdf/")
-text = PDF(name="slides-content")
-txt.path("/home/txt/")
+txt = PDF(name="slides-content")
 
-print(pdf, pdf.save())
-print(txt, txt.save())
+print(txt, txt.save("/home/txt/"))
+print(pdf, pdf.save("/home/pdf/"))
