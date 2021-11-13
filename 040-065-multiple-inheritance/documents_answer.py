@@ -28,14 +28,14 @@ class TEXT(Document):
         super().__init__(name)
 
     def save(self, path):
-        return self.path() + self.name + ".txt"
+        return self.path(path) + self.name + ".txt"
 
     def __str__(self):
         return "This is a Text Document"
 
 
 pdf = PDF(name="slides-show")
-txt = PDF(name="slides-content")
+txt = TEXT(name="slides-content")
 
 print(txt, txt.save("/home/txt/"))
 print(pdf, pdf.save("/home/pdf/"))
