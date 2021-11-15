@@ -2,7 +2,7 @@ class ObjCounter:
     # set the private 'counter' here
 
     def __init__(self, val=1):
-        # add here the private property 'first'
+        # set a private property 'first' to val
 
         # add here the counter
 
