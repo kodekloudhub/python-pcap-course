@@ -6,6 +6,6 @@ class EmailError(ValueError):
 email = "admin#libray.net"
 try:
     if "@" not in email:
-        raise EmailError("wrong format!", "pending!")
+        raise EmailError("pending!","wrong format!")
 except EmailError as nve:
     print(e)
