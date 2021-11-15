@@ -7,5 +7,5 @@ email = "admin#libray.net"
 try:
     if "@" not in email:
         raise EmailError("pending!","wrong format!")
-except EmailError as nve:
+except EmailError as e:
     print(e)
