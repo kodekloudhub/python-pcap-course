@@ -1,4 +1,4 @@
-f = open("./oulipo.txt", "r")
+f = open("/root/code/oulipo.txt", "r")
 # Read the lines of the file
 
 # Iterate through the lines
