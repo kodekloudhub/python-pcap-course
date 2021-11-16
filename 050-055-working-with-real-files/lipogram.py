@@ -3,7 +3,8 @@ from os import strerror
 
 def lipogram(letter):
     letter.lower()
-    # Write a try/except block to open the file
+    # Write a try/except block to open the oulipo file
+    # use the absolute path /root/code/oulipo.txt
     # and handle an IOError
     try:
 
