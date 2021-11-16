@@ -4,7 +4,7 @@ from os import strerror
 def lipogram(letter):
     letter.lower()
     try:
-        txt = open("./oulipo.txt", "r")
+        txt = open("/root/code/oulipo.txt", "r")
     except IOError as e:
         print("I/O error: ", strerror(e.errno))
         txt = None
