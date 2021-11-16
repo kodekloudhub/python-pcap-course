@@ -1,4 +1,4 @@
-f = open("./oulipo.txt", "r")
+f = open("/root/code/oulipo.txt", "r")
 lines = f.readlines()
 
 for line in lines:
